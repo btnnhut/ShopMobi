@@ -1,0 +1,283 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="ShopMobi.Client.Default" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ClickBuy</title>
+    <link rel="stylesheet" href="/Areas/Client/statics/css/bootstrap.css">
+    <link rel="stylesheet" href="/Areas/Client/statics/css/font-awesome.css">
+    <link rel="stylesheet" href="/Areas/Client/statics/css/ionicons.min.css">
+    <link rel="stylesheet" href="/Areas/Client/statics/css/slick.css">
+    <link rel="stylesheet" href="/Areas/Client/statics/css/slick-theme.css">
+    <link rel="stylesheet" href="/Areas/Client/statics/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Areas/Client/statics/css/style.css">
+    <link href="/Areas/Client/statics/css/Open.css" rel="stylesheet">
+    <link href="/Areas/Client/statics/css/Poppins.css" rel="stylesheet">
+    <link href="/Areas/Client/statics/css/Ubuntu.css" rel="stylesheet">
+    <script type="text/javascript" src="/Areas/Client/statics/js/jquery.js"></script>
+    <%--Login--%>
+    <link rel="stylesheet" href="/Areas/Client/Login/statics/css/css.css">
+</head>
+
+<body>
+    <header>
+        <div class="topbar-mobile hidden-lg hidden-md">
+            <div class="active-mobile">
+                <div class="language-popup dropdown">
+                    <a id="label" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon"><i class="ion-ios-world-outline" aria-hidden="true"></i></span>
+                        <span>English</span>
+                        <span class="ion-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="label">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Vietnamese</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-nav">
+                <div class="active-mobile">
+                    <div class="header_user_info popup-over e-scale hidden-lg hidden-md dropdown">
+                        <div data-toggle="dropdown" class="popup-title dropdown-toggle" title="Account">
+                            <i class="ion-android-person"></i><span>Account</span>
+                        </div>
+                        <ul class="links dropdown-menu list-unstyled">
+                            <li>
+                                <a id="customer_login_link" href="#" title="Sign in"><i class="ion-log-in"></i>Login</a>
+                            </li>
+                            <li>
+                                <a id="customer_register_link" href="#" title="Register"><i class="ion-ios-personadd"></i>Register</a>
+                            </li>
+                            <li>
+                                <a class="account" rel="nofollow" href="#" title="My account"><i class="ion-ios-person"></i>My account</a>
+                            </li>
+                            <li>
+                                <a id="wishlist-total" title="Wishlist" href="#"><i class="ion-ios-heart"></i>Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Check out"><i class="ion-ios-cart"></i>Check out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="active-mobile search-popup pull-right">
+                    <div class="search-popup dropdown" data-toggle="modal" data-target="#myModal">
+                        <i class="ion-search fa-3a"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="top-nav v2 hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="left-nav">
+                            <div class="location dropdown">
+                                <a id="label1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="icon"><i class="ion-ios-location" aria-hidden="true"></i></span>
+                                    <span>Shooping Store</span>
+                                    <span class="ion-chevron-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="label1">
+                                    <li><a href="#">HCM</a></li>
+                                    <li><a href="#">Ha Noi</a></li>
+                                </ul>
+                            </div>
+                            <%--<div class="language dropdown">
+                                <a id="label2" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="icon"><i class="ion-ios-world-outline" aria-hidden="true"></i></span>
+                                    <span>English</span>
+                                    <span class="ion-chevron-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="label2">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Vietnamese</a></li>
+                                </ul>
+                            </div>--%>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div class="right-nav">
+                            <ul>
+                                <li><a href="#"><i class="ion-ios-personadd fa-1a" aria-hidden="true"></i>create account</a></li>
+                                <li><a href="#"><i class="ion-log-in fa-1a" aria-hidden="true"></i>login</a></li>
+                            </ul>
+                            <div class="nav-search">
+                                <form action="#" class="search-form v3">
+                                    <input type="text" name="s" class="form-control" placeholder="Search...">
+                                    <button type="submit" class="search-icon v3 fa-3"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-8 col-xs-8  logo">
+                        <a href="#">
+                            <img src="/Areas/Client/statics/img/logo.png" alt="images" class="img-reponsive"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-4  nextlogo">
+                        <div class="block block-2 v3">
+                            <div class="cart">
+                                <a href="#" title="" id="cart" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <div class="photo photo-cart">
+                                        <img src="/Areas/Client/statics/img/cart.png" alt="images" class="img-reponsive">
+                                        <span class="lbl">05</span>
+                                    </div>
+                                    <p class="inform inform-cart">
+                                        <span class="strong">CART<br>
+                                        </span>
+                                        <span class="price-cart">$1150.69</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu v3">
+            <div class="container">
+                <div class="row row-no-padding">
+                    <div class="collapse navbar-collapse v3" id="myNavbar">
+                        <ul class="menubar v3 js-menubar">
+                            <li class=" menu-homepage menu-item-has-child dropdown">
+                                <a href="#" title="Home"><i class="fa fa-home"></i>home</a>
+                            </li>
+                            <li class="menu-collection-page menu-item-has-child dropdown">
+                                <a href="#" title="DienThoai">dien thoai</a>
+                                <span class="plus js-plus-icon"></span>
+                                <ul class="dropdown-menu menu-level">
+                                    <li><a href="#" title="shop collection">IPhone</a></li>
+                                    <li><a href="#" title="shop list v1">SAMSUNG</a></li>
+                                    <li><a href="#" title="shop list v2">OPPO</a></li>
+                                    <li><a href="#" title="shoplist v3">VIVO</a></li>
+                                </ul>
+                            </li>
+                            <li class=" menu-demo-page menu-item-has-child dropdown">
+                                <a href="#" title="Sellerdemo">CONTACT</a>
+                            </li>
+                            <li class="dropdown menu-contact-page menu-item-has-child">
+                                <a href="#" title="ContactUs">ABOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <asp:ContentPlaceHolder ID="contectPage" runat="server"></asp:ContentPlaceHolder>
+
+    
+
+    <footer>
+        <div class="features v3"></div>
+
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="/Areas/Client/statics/img/logo.png" alt="images" class="img-responsive"></a>
+                        </div>
+                        <p class="info-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant...</p>
+                        <div class="widget-info">
+                            <ul>
+                                <li><i class="ion-ios-location fa-4" aria-hidden="true"></i>One World Trade Center Suite 8500 New York, NY 1006</li>
+                                <li class="clearfix"></li>
+                                <li><i class="ion-ios-telephone fa-4" aria-hidden="true"></i>
+                                    <p class="title-contain">(800) 8001-8588</p>
+                                </li>
+                                <li class="clearfix"></li>
+                                <li><i class="ion-email-unread fa-4" aria-hidden="true"></i>
+                                    <p class="title-contain">ClickShop@support.com</p>
+                                </li>
+                                <li class="clearfix"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <h3>let us help you</h3>
+                                <ul class="fmenu">
+                                    <li><a href="#">your account</a></li>
+                                    <li><a href="#">your orders</a></li>
+                                    <li><a href="#">shipping rates & policies</a></li>
+                                    <li><a href="#">clickShop prime</a></li>
+                                    <li><a href="#">return & Replacements</a></li>
+                                    <li><a href="#">Manage Your Content and Devices</a></li>
+                                    <li><a href="#">ClickShop Assistant</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-xs-12 pd-left">
+                                <h3>useful links</h3>
+                                <ul class="fmenu">
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">About ClickShop</a></li>
+                                    <li><a href="#">Investor Relations</a></li>
+                                    <li><a href="#">Our Devices</a></li>
+                                    <li><a href="#">Apps & Download</a></li>
+                                    <li><a href="#">Thinking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h3>Newsletter</h3>
+                        <p class="news-desc">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+                        <form action="#" class="news-letter-form">
+                            <input type="text" name="e" class="form-control" placeholder="Enter your e-mail">
+                            <button type="submit" class="btnsub">Subscribe</button>
+                        </form>
+                        <h3 class="titles">FIND US ON:</h3>
+                        <ul class="social">
+                            <li><a href="#"><i class="ion-social-facebook fa-3" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter fa-3" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus fa-3" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="ion-social-youtube fa-3" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="ion-social-linkedin fa-3" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <span>© <a href="#" title="">ClickBuy</a> - All Rights Reserved.</span>
+                <ul class="payment">
+                    <li><a href="#">
+                        <img src="/Areas/Client/statics/img/paypal.png" alt="images" class="img-responsive"></a></li>
+                    <li><a href="#">
+                        <img src="/Areas/Client/statics/img/visa.png" alt="images" class="img-responsive"></a></li>
+                    <li><a href="#">
+                        <img src="/Areas/Client/statics/img/american.png" alt="images" class="img-responsive"></a></li>
+                    <li><a href="#">
+                        <img src="/Areas/Client/statics/img/mastercard.png" alt="images" class="img-responsive"></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/Areas/Client/statics/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/Areas/Client/statics/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/Areas/Client/statics/js/slick.min.js"></script>
+    <script type="text/javascript" src="/Areas/Client/statics/js/main.js"></script>
+
+</body>
+
+</html>

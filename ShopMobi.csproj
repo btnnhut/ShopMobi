@@ -1,0 +1,659 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0A430AA-9CD0-4245-B4E2-6917CE7D3F0B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopMobi</RootNamespace>
+    <AssemblyName>ShopMobi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44355</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Client\Login\statics\css\3.3.0\bootstrap.min.css" />
+    <Content Include="Areas\Client\Login\statics\css\css.css" />
+    <Content Include="Areas\Client\Login\statics\js\3.3.0\bootstrap.min.js" />
+    <Content Include="Areas\Client\Login\statics\js\jquery-1.11.1.min.js" />
+    <Content Include="Areas\Client\Login\statics\js\js.js" />
+    <Content Include="Areas\Client\statics\css\ajax-loader.gif" />
+    <Content Include="Areas\Client\statics\css\bootstrap-slider.css" />
+    <Content Include="Areas\Client\statics\css\bootstrap-slider.min.css" />
+    <Content Include="Areas\Client\statics\css\bootstrap.css" />
+    <Content Include="Areas\Client\statics\css\bootstrap.min.css" />
+    <Content Include="Areas\Client\statics\css\Open.css" />
+    <Content Include="Areas\Client\statics\css\font-awesome.css" />
+    <Content Include="Areas\Client\statics\css\ionicons.min.css" />
+    <Content Include="Areas\Client\statics\css\owl.carousel.min.css" />
+    <Content Include="Areas\Client\statics\css\owl.theme.default.min.css" />
+    <Content Include="Areas\Client\statics\css\Poppins.css" />
+    <Content Include="Areas\Client\statics\css\reponsive.css" />
+    <Content Include="Areas\Client\statics\css\simple-line-icons.css" />
+    <Content Include="Areas\Client\statics\css\slick-theme.css" />
+    <Content Include="Areas\Client\statics\css\slick.css" />
+    <Content Include="Areas\Client\statics\css\style.css" />
+    <Content Include="Areas\Client\statics\css\Ubuntu.css" />
+    <Content Include="Areas\Client\statics\fonts\fontawesome-webfont.svg" />
+    <Content Include="Areas\Client\statics\fonts\ionicons.svg" />
+    <Content Include="Areas\Client\statics\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Areas\Client\statics\fonts\slick.svg" />
+    <Content Include="Areas\Client\statics\img\330x430.jpg" />
+    <Content Include="Areas\Client\statics\img\404.jpg" />
+    <Content Include="Areas\Client\statics\img\470x600.jpg" />
+    <Content Include="Areas\Client\statics\img\about-us.jpg" />
+    <Content Include="Areas\Client\statics\img\about\404.jpg" />
+    <Content Include="Areas\Client\statics\img\about\about-us.png" />
+    <Content Include="Areas\Client\statics\img\about\map.jpg" />
+    <Content Include="Areas\Client\statics\img\ad.jpg" />
+    <Content Include="Areas\Client\statics\img\air-conditioner-w.svg" />
+    <Content Include="Areas\Client\statics\img\air-conditioner.svg" />
+    <Content Include="Areas\Client\statics\img\american.png" />
+    <Content Include="Areas\Client\statics\img\arrow-3.png" />
+    <Content Include="Areas\Client\statics\img\arrow.png" />
+    <Content Include="Areas\Client\statics\img\avatar_author.png" />
+    <Content Include="Areas\Client\statics\img\banner-2.jpg" />
+    <Content Include="Areas\Client\statics\img\banner.jpg" />
+    <Content Include="Areas\Client\statics\img\banner6.jpg" />
+    <Content Include="Areas\Client\statics\img\banner\ad2.jpg" />
+    <Content Include="Areas\Client\statics\img\banner\adv.jpg" />
+    <Content Include="Areas\Client\statics\img\banner\banner-2.jpg" />
+    <Content Include="Areas\Client\statics\img\banner\banner-3.jpg" />
+    <Content Include="Areas\Client\statics\img\banner\banner-4.jpg" />
+    <Content Include="Areas\Client\statics\img\banner\subbanner-1.jpg" />
+    <Content Include="Areas\Client\statics\img\banner\subbanner-1.png" />
+    <Content Include="Areas\Client\statics\img\banner\subbanner-2.jpg" />
+    <Content Include="Areas\Client\statics\img\banner_4_1.jpg" />
+    <Content Include="Areas\Client\statics\img\bg-checkout.png" />
+    <Content Include="Areas\Client\statics\img\bg-coming.jpg" />
+    <Content Include="Areas\Client\statics\img\bg-coming.png" />
+    <Content Include="Areas\Client\statics\img\Black-&amp;-White-5.jpg" />
+    <Content Include="Areas\Client\statics\img\blog-1.jpg" />
+    <Content Include="Areas\Client\statics\img\blog-2.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\blog-avt.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\blog-recentpost-1.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\blog-recentpost-2.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\blog-recentpost-3.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\blog-slide-1.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\blog-slide-next.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\blog-slide-prev.jpg" />
+    <Content Include="Areas\Client\statics\img\blog\quote-icon.png" />
+    <Content Include="Areas\Client\statics\img\blog_1.jpg" />
+    <Content Include="Areas\Client\statics\img\blog_2.jpg" />
+    <Content Include="Areas\Client\statics\img\blog_3.jpg" />
+    <Content Include="Areas\Client\statics\img\blog_4.jpg" />
+    <Content Include="Areas\Client\statics\img\blog_5.jpg" />
+    <Content Include="Areas\Client\statics\img\blog_6.jpg" />
+    <Content Include="Areas\Client\statics\img\blog_7.jpg" />
+    <Content Include="Areas\Client\statics\img\brand\midnight.jpg" />
+    <Content Include="Areas\Client\statics\img\brand\netsuite.jpg" />
+    <Content Include="Areas\Client\statics\img\brand\shepad.jpg" />
+    <Content Include="Areas\Client\statics\img\brand\target.jpg" />
+    <Content Include="Areas\Client\statics\img\brand\yourclothes.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_1.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_10.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_11.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_12.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_13.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_14.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_15.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_2.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_3.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_4.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_5.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_6.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_7.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_8.jpg" />
+    <Content Include="Areas\Client\statics\img\bs_6_9.jpg" />
+    <Content Include="Areas\Client\statics\img\cam.png" />
+    <Content Include="Areas\Client\statics\img\camicon.png" />
+    <Content Include="Areas\Client\statics\img\cart.png" />
+    <Content Include="Areas\Client\statics\img\cart1.jpg" />
+    <Content Include="Areas\Client\statics\img\cart1.png" />
+    <Content Include="Areas\Client\statics\img\cart_2.png" />
+    <Content Include="Areas\Client\statics\img\cart_6_1.png" />
+    <Content Include="Areas\Client\statics\img\categories\categories-1.png" />
+    <Content Include="Areas\Client\statics\img\categories\categories-2.png" />
+    <Content Include="Areas\Client\statics\img\categories\categories-3.png" />
+    <Content Include="Areas\Client\statics\img\checkout\product-1.jpg" />
+    <Content Include="Areas\Client\statics\img\checkout\product-2.jpg" />
+    <Content Include="Areas\Client\statics\img\checkout\product-3.jpg" />
+    <Content Include="Areas\Client\statics\img\comming-soon.jpg" />
+    <Content Include="Areas\Client\statics\img\coupon.svg" />
+    <Content Include="Areas\Client\statics\img\delivery-truck.svg" />
+    <Content Include="Areas\Client\statics\img\dot.png" />
+    <Content Include="Areas\Client\statics\img\fly.png" />
+    <Content Include="Areas\Client\statics\img\food-img\Cheese Fries-1.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Cheese Fries-2.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Cheese Fries-3.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Cheesy Shawarma-1.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\classic cheese pizza-1.png" />
+    <Content Include="Areas\Client\statics\img\food-img\French Fries-1.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\French Fries-2.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Italian Bolognese-1.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Italian Bolognese-2.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Pizza Item-1.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Shahi Biriani-1.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Smoke House Double Beef Burger-1.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Smoke House Double Beef Burger-2.jpg" />
+    <Content Include="Areas\Client\statics\img\food-img\Smoke House Double Beef Burger-3.jpg" />
+    <Content Include="Areas\Client\statics\img\footer.jpg" />
+    <Content Include="Areas\Client\statics\img\gamepad-w.svg" />
+    <Content Include="Areas\Client\statics\img\gamepad.svg" />
+    <Content Include="Areas\Client\statics\img\gift.png" />
+    <Content Include="Areas\Client\statics\img\headset-w.svg" />
+    <Content Include="Areas\Client\statics\img\headset.svg" />
+    <Content Include="Areas\Client\statics\img\icon-cart_5.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\air-condition.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\camera.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\game-control.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\head-phone.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\laptop.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\mouse.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\phone.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\wallet.png" />
+    <Content Include="Areas\Client\statics\img\icon-category\washing-machine.png" />
+    <Content Include="Areas\Client\statics\img\img-1.jpg" />
+    <Content Include="Areas\Client\statics\img\instagram_5_1.jpg" />
+    <Content Include="Areas\Client\statics\img\instagram_5_2.jpg" />
+    <Content Include="Areas\Client\statics\img\instagram_5_3.jpg" />
+    <Content Include="Areas\Client\statics\img\instagram_5_4.jpg" />
+    <Content Include="Areas\Client\statics\img\instagram_5_5.jpg" />
+    <Content Include="Areas\Client\statics\img\iphone6.png" />
+    <Content Include="Areas\Client\statics\img\laptob-w.svg" />
+    <Content Include="Areas\Client\statics\img\laptob.svg" />
+    <Content Include="Areas\Client\statics\img\laptop.png" />
+    <Content Include="Areas\Client\statics\img\laptopicon.png" />
+    <Content Include="Areas\Client\statics\img\logo.png" />
+    <Content Include="Areas\Client\statics\img\Logo_5.png" />
+    <Content Include="Areas\Client\statics\img\logo_6_1.png" />
+    <Content Include="Areas\Client\statics\img\logo_footer_4_1.png" />
+    <Content Include="Areas\Client\statics\img\logo_h2.png" />
+    <Content Include="Areas\Client\statics\img\mastercard.png" />
+    <Content Include="Areas\Client\statics\img\megaimg.png" />
+    <Content Include="Areas\Client\statics\img\megamenubanner.jpg" />
+    <Content Include="Areas\Client\statics\img\megamenubanner.png" />
+    <Content Include="Areas\Client\statics\img\menubg.jpg" />
+    <Content Include="Areas\Client\statics\img\mouse-w.svg" />
+    <Content Include="Areas\Client\statics\img\mouse.svg" />
+    <Content Include="Areas\Client\statics\img\onsale_4_1.jpg" />
+    <Content Include="Areas\Client\statics\img\payment.png" />
+    <Content Include="Areas\Client\statics\img\paypal.png" />
+    <Content Include="Areas\Client\statics\img\pd_5_1.jpg" />
+    <Content Include="Areas\Client\statics\img\pd_5_2.jpg" />
+    <Content Include="Areas\Client\statics\img\pd_5_3.jpg" />
+    <Content Include="Areas\Client\statics\img\pd_5_4.jpg" />
+    <Content Include="Areas\Client\statics\img\pd_5_5.jpg" />
+    <Content Include="Areas\Client\statics\img\pd_5_6.jpg" />
+    <Content Include="Areas\Client\statics\img\pd_5_7.jpg" />
+    <Content Include="Areas\Client\statics\img\pd_5_8.jpg" />
+    <Content Include="Areas\Client\statics\img\photo-camera-w.svg" />
+    <Content Include="Areas\Client\statics\img\photo-camera.svg" />
+    <Content Include="Areas\Client\statics\img\product-collection\featured-product-10.jpg" />
+    <Content Include="Areas\Client\statics\img\product-collection\product1.png" />
+    <Content Include="Areas\Client\statics\img\product-collection\product2.png" />
+    <Content Include="Areas\Client\statics\img\product-collection\product3.png" />
+    <Content Include="Areas\Client\statics\img\product-collection\product4.png" />
+    <Content Include="Areas\Client\statics\img\product-collection\product5.png" />
+    <Content Include="Areas\Client\statics\img\product-collection\product6.png" />
+    <Content Include="Areas\Client\statics\img\products\270x234.png" />
+    <Content Include="Areas\Client\statics\img\products\banner-v2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\banner-v2.png" />
+    <Content Include="Areas\Client\statics\img\products\camera.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canon.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canon2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_1.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_10.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_3.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_4.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_5.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_6.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_7.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_8.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canoneos_9.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canonpixma.jpg" />
+    <Content Include="Areas\Client\statics\img\products\canon_pixma.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cyclebs_4_1.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cyclebs_4_2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cyclebs_4_3.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_4_1.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_4_2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_4_3.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_4_6.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_1.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_3.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_4.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_5.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_6.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_7.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_5_8.jpg" />
+    <Content Include="Areas\Client\statics\img\products\cycle_onsale.jpg" />
+    <Content Include="Areas\Client\statics\img\products\ear.jpg" />
+    <Content Include="Areas\Client\statics\img\products\ejbl.jpg" />
+    <Content Include="Areas\Client\statics\img\products\garmin.jpg" />
+    <Content Include="Areas\Client\statics\img\products\grid-4.png" />
+    <Content Include="Areas\Client\statics\img\products\hat.jpg" />
+    <Content Include="Areas\Client\statics\img\products\hoddie.jpg" />
+    <Content Include="Areas\Client\statics\img\products\hoddie_1.jpg" />
+    <Content Include="Areas\Client\statics\img\products\hoddie_2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\hoddie_3.jpg" />
+    <Content Include="Areas\Client\statics\img\products\imac.jpg" />
+    <Content Include="Areas\Client\statics\img\products\insport-bag.jpg" />
+    <Content Include="Areas\Client\statics\img\products\ipad.jpg" />
+    <Content Include="Areas\Client\statics\img\products\iwatch.jpg" />
+    <Content Include="Areas\Client\statics\img\products\iwatch2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\kryptonite.jpg" />
+    <Content Include="Areas\Client\statics\img\products\lens.jpg" />
+    <Content Include="Areas\Client\statics\img\products\lock.jpg" />
+    <Content Include="Areas\Client\statics\img\products\macbook.jpg" />
+    <Content Include="Areas\Client\statics\img\products\macmini.jpg" />
+    <Content Include="Areas\Client\statics\img\products\macmini2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\nikon.jpg" />
+    <Content Include="Areas\Client\statics\img\products\product1.png" />
+    <Content Include="Areas\Client\statics\img\products\product2.png" />
+    <Content Include="Areas\Client\statics\img\products\product3.png" />
+    <Content Include="Areas\Client\statics\img\products\product4.png" />
+    <Content Include="Areas\Client\statics\img\products\product5.png" />
+    <Content Include="Areas\Client\statics\img\products\productv3-1.png" />
+    <Content Include="Areas\Client\statics\img\products\productv3-2.png" />
+    <Content Include="Areas\Client\statics\img\products\productv3-3.png" />
+    <Content Include="Areas\Client\statics\img\products\productv3-4.png" />
+    <Content Include="Areas\Client\statics\img\products\productv3-5.png" />
+    <Content Include="Areas\Client\statics\img\products\samsung.jpg" />
+    <Content Include="Areas\Client\statics\img\products\seiko.jpg" />
+    <Content Include="Areas\Client\statics\img\products\smarphone.jpg" />
+    <Content Include="Areas\Client\statics\img\products\sony.jpg" />
+    <Content Include="Areas\Client\statics\img\products\sound.jpg" />
+    <Content Include="Areas\Client\statics\img\products\sound2.jpg" />
+    <Content Include="Areas\Client\statics\img\products\sound3.jpg" />
+    <Content Include="Areas\Client\statics\img\products\sound4.jpg" />
+    <Content Include="Areas\Client\statics\img\products\sungglasses.jpg" />
+    <Content Include="Areas\Client\statics\img\products\sunglasses.jpg" />
+    <Content Include="Areas\Client\statics\img\products\tacx.jpg" />
+    <Content Include="Areas\Client\statics\img\products\test.jpg" />
+    <Content Include="Areas\Client\statics\img\products\tivi.jpg" />
+    <Content Include="Areas\Client\statics\img\products\watch.jpg" />
+    <Content Include="Areas\Client\statics\img\product\cart.png" />
+    <Content Include="Areas\Client\statics\img\product\color-img-1.jpg" />
+    <Content Include="Areas\Client\statics\img\product\color-img-2.jpg" />
+    <Content Include="Areas\Client\statics\img\product\color-img-3.jpg" />
+    <Content Include="Areas\Client\statics\img\product\color-img-4.jpg" />
+    <Content Include="Areas\Client\statics\img\product\color-img-5.jpg" />
+    <Content Include="Areas\Client\statics\img\product\color.jpg" />
+    <Content Include="Areas\Client\statics\img\product\grid-4.png" />
+    <Content Include="Areas\Client\statics\img\product\grid-one.png" />
+    <Content Include="Areas\Client\statics\img\product\prod.jpg" />
+    <Content Include="Areas\Client\statics\img\return.png" />
+    <Content Include="Areas\Client\statics\img\secu.png" />
+    <Content Include="Areas\Client\statics\img\security-badge.png" />
+    <Content Include="Areas\Client\statics\img\security.svg" />
+    <Content Include="Areas\Client\statics\img\security_w.svg" />
+    <Content Include="Areas\Client\statics\img\slider\image-slider1.jpg" />
+    <Content Include="Areas\Client\statics\img\slider\image-slider2.jpg" />
+    <Content Include="Areas\Client\statics\img\slider\image-slider3.jpg" />
+    <Content Include="Areas\Client\statics\img\slider\image-slider4.jpg" />
+    <Content Include="Areas\Client\statics\img\slider\image-slider5.jpg" />
+    <Content Include="Areas\Client\statics\img\slider\image-slider6.jpg" />
+    <Content Include="Areas\Client\statics\img\slider\price.png" />
+    <Content Include="Areas\Client\statics\img\slide_4_1.jpg" />
+    <Content Include="Areas\Client\statics\img\slide_5_1.jpg" />
+    <Content Include="Areas\Client\statics\img\slide_6_1.jpg" />
+    <Content Include="Areas\Client\statics\img\slide_6_2.jpg" />
+    <Content Include="Areas\Client\statics\img\smartphone-w.svg" />
+    <Content Include="Areas\Client\statics\img\smartphone.svg" />
+    <Content Include="Areas\Client\statics\img\smicon.png" />
+    <Content Include="Areas\Client\statics\img\subbanner_4_1.jpg" />
+    <Content Include="Areas\Client\statics\img\subbanner_4_2.jpg" />
+    <Content Include="Areas\Client\statics\img\subbanner_4_3.jpg" />
+    <Content Include="Areas\Client\statics\img\subbanner_5_1.jpg" />
+    <Content Include="Areas\Client\statics\img\subbanner_5_2.jpg" />
+    <Content Include="Areas\Client\statics\img\subbanner_5_3.jpg" />
+    <Content Include="Areas\Client\statics\img\test_1.jpg" />
+    <Content Include="Areas\Client\statics\img\test_1.png" />
+    <Content Include="Areas\Client\statics\img\test_2.jpg" />
+    <Content Include="Areas\Client\statics\img\test_2.png" />
+    <Content Include="Areas\Client\statics\img\test_3.jpg" />
+    <Content Include="Areas\Client\statics\img\test_3.png" />
+    <Content Include="Areas\Client\statics\img\test_4.jpg" />
+    <Content Include="Areas\Client\statics\img\test_4.png" />
+    <Content Include="Areas\Client\statics\img\test_5.jpg" />
+    <Content Include="Areas\Client\statics\img\test_5.png" />
+    <Content Include="Areas\Client\statics\img\update-arrows.svg" />
+    <Content Include="Areas\Client\statics\img\update-arrows_w.svg" />
+    <Content Include="Areas\Client\statics\img\visa.png" />
+    <Content Include="Areas\Client\statics\img\wallet.svg" />
+    <Content Include="Areas\Client\statics\img\washing-machine-w.svg" />
+    <Content Include="Areas\Client\statics\img\washing-machine.svg" />
+    <Content Include="Areas\Client\statics\js\bootstrap-slider.min.js" />
+    <Content Include="Areas\Client\statics\js\bootstrap.js" />
+    <Content Include="Areas\Client\statics\js\bootstrap.min.js" />
+    <Content Include="Areas\Client\statics\js\countdown.js" />
+    <Content Include="Areas\Client\statics\js\jquery.js" />
+    <Content Include="Areas\Client\statics\js\main.js" />
+    <Content Include="Areas\Client\statics\js\owl.carousel.min.js" />
+    <Content Include="Areas\Client\statics\js\slick.min.js" />
+    <Content Include="Areas\Client\statics\scss\bootstrap-slider.css" />
+    <Content Include="Areas\Client\statics\scss\bootstrap.css" />
+    <Content Include="Areas\Client\statics\scss\style.css" />
+    <Content Include="ShopMobi\Client\About.aspx" />
+    <Content Include="ShopMobi\Client\Cart.aspx" />
+    <Content Include="ShopMobi\Client\Contact.aspx" />
+    <Content Include="ShopMobi\Client\DetailProduct.aspx" />
+    <Content Include="ShopMobi\Client\Home.aspx" />
+    <Content Include="ShopMobi\Client\ListProduct.aspx" />
+    <Content Include="ShopMobi\Client\Login.aspx" />
+    <Content Include="ShopMobi\Client\test.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ShopMobi\Client\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ShopMobi\Client\DetailProduct.aspx.cs">
+      <DependentUpon>DetailProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\DetailProduct.aspx.designer.cs">
+      <DependentUpon>DetailProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopMobi\Client\ListProduct.aspx.cs">
+      <DependentUpon>ListProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\ListProduct.aspx.designer.cs">
+      <DependentUpon>ListProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopMobi\Client\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopMobi\Client\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ShopMobi\Client\Default.Master" />
+    <Content Include="Areas\Client\statics\css\bootstrap-slider.css.map" />
+    <Content Include="Areas\Client\statics\css\bootstrap.css.map" />
+    <Content Include="Areas\Client\statics\css\style.css.map" />
+    <Content Include="Areas\Client\statics\css\vendor.rar" />
+    <Content Include="Areas\Client\statics\fonts\fontawesome-webfont.eot" />
+    <Content Include="Areas\Client\statics\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Areas\Client\statics\fonts\fontawesome-webfont.woff" />
+    <Content Include="Areas\Client\statics\fonts\FontAwesome.otf" />
+    <Content Include="Areas\Client\statics\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Areas\Client\statics\fonts\ionicons.ttf" />
+    <Content Include="Areas\Client\statics\fonts\ionicons.woff" />
+    <Content Include="Areas\Client\statics\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Areas\Client\statics\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Areas\Client\statics\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Areas\Client\statics\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="Areas\Client\statics\fonts\slick.eot" />
+    <Content Include="Areas\Client\statics\fonts\slick.ttf" />
+    <Content Include="Areas\Client\statics\fonts\slick.woff" />
+    <Content Include="Areas\Client\statics\img\.DS_Store" />
+    <Content Include="Areas\Client\statics\img\banner\.DS_Store" />
+    <Content Include="Areas\Client\statics\img\blog\.DS_Store" />
+    <Content Include="Areas\Client\statics\img\checkout\.DS_Store" />
+    <Content Include="Areas\Client\statics\img\icon-category\.DS_Store" />
+    <Content Include="Areas\Client\statics\img\products\.DS_Store" />
+    <Content Include="Areas\Client\statics\img\product\.DS_Store" />
+    <Content Include="Areas\Client\statics\js\.DS_Store" />
+    <Content Include="Areas\Client\statics\scss\.DS_Store" />
+    <Content Include="Areas\Client\statics\scss\base\_base.scss" />
+    <Content Include="Areas\Client\statics\scss\base\_mixin.scss" />
+    <Content Include="Areas\Client\statics\scss\base\_normalize.scss" />
+    <Content Include="Areas\Client\statics\scss\base\_variable.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap-slider.css.map" />
+    <Content Include="Areas\Client\statics\scss\bootstrap-slider.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap.css.map" />
+    <Content Include="Areas\Client\statics\scss\bootstrap.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\.DS_Store" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_alerts.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_center-block.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_labels.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_opacity.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_panels.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_alerts.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_badges.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_button-groups.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_buttons.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_carousel.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_close.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_code.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_component-animations.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_dropdowns.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_forms.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_glyphicons.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_grid.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_input-groups.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_labels.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_list-group.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_media.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_mixins.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_modals.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_navbar.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_navs.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_normalize.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_pager.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_pagination.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_panels.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_popovers.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_print.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_progress-bars.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_responsive-embed.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_scaffolding.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_tables.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_theme.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_thumbnails.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_type.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_utilities.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_variables.scss" />
+    <Content Include="Areas\Client\statics\scss\bootstrap\_wells.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\.DS_Store" />
+    <Content Include="Areas\Client\statics\scss\layouts\_about-us.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_blog.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_checkout.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_footer.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_grid.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_header.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_nav.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_product-collection.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_product_list.scss" />
+    <Content Include="Areas\Client\statics\scss\layouts\_shop-list.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\.DS_Store" />
+    <Content Include="Areas\Client\statics\scss\modules\_block.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\_button.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\_component.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\_form.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\_megamenu.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\_ribbon.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\_section.scss" />
+    <Content Include="Areas\Client\statics\scss\modules\_typography.scss" />
+    <Content Include="Areas\Client\statics\scss\reponsive\_desktop.scss" />
+    <Content Include="Areas\Client\statics\scss\reponsive\_mobile.scss" />
+    <Content Include="Areas\Client\statics\scss\reponsive\_table.scss" />
+    <Content Include="Areas\Client\statics\scss\style.css.map" />
+    <Content Include="Areas\Client\statics\scss\style.scss" />
+    <Content Include="Areas\Client\statics\scss\_bootstrap-compass.scss" />
+    <Content Include="Areas\Client\statics\scss\_bootstrap-mincer.scss" />
+    <Content Include="Areas\Client\statics\scss\_bootstrap-sprockets.scss" />
+    <Content Include="Areas\Client\statics\scss\_mixins.scss" />
+    <Content Include="Areas\Client\statics\scss\_rules.scss" />
+    <Content Include="Areas\Client\statics\scss\_variables.scss" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49915</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44355/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
