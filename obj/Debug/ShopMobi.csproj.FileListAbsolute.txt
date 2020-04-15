@@ -56,3 +56,12 @@ C:\Users\Admin\Desktop\ShopOnlineForm\ShopMobi\obj\Debug\ShopMobi.csprojAssembly
 C:\Users\Admin\Desktop\ShopOnlineForm\ShopMobi\obj\Debug\ShopMobi.csproj.CopyComplete
 C:\Users\Admin\Desktop\ShopOnlineForm\ShopMobi\obj\Debug\ShopMobi.dll
 C:\Users\Admin\Desktop\ShopOnlineForm\ShopMobi\obj\Debug\ShopMobi.pdb
+D:\UserData\Desktop\New folder\bin\ShopMobi.dll.config
+D:\UserData\Desktop\New folder\bin\ShopMobi.dll
+D:\UserData\Desktop\New folder\bin\ShopMobi.pdb
+D:\UserData\Desktop\New folder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\UserData\Desktop\New folder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\UserData\Desktop\New folder\obj\Debug\ShopMobi.csprojAssemblyReference.cache
+D:\UserData\Desktop\New folder\obj\Debug\ShopMobi.csproj.CopyComplete
+D:\UserData\Desktop\New folder\obj\Debug\ShopMobi.dll
+D:\UserData\Desktop\New folder\obj\Debug\ShopMobi.pdb
