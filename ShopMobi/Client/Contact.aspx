@@ -5,10 +5,10 @@
     <section class="contact-us">
         <div class="container">
             <div class="heading-sub">
-                <h3 class="pull-left">contact</h3>
+                <h3 class="pull-left">Liên hệ</h3>
                 <ul class="other-link-sub pull-right">
-                    <li><a href="#home">Home</a></li>
-                    <li><a class="active" href="#">Contact</a></li>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a class="active" href="#">Liên hệ</a></li>
                 </ul>
                 <div class="clearfix"></div>
             </div>
@@ -43,7 +43,8 @@
             <div class="contact-info-content">
                 <div class="row">
                     <div class="col-md-6">
-                        <form action="#" class="contact-form">
+                        <%--<form action="#" class="contact-form">--%>
+                        <div>
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-md-6 col-xs-12">
@@ -77,7 +78,8 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn-send-message">SEND MESSENGE</button>
-                        </form>
+                        </div>
+                        <%--</form>--%>
                     </div>
                     <div class="col-md-6">
                         <div id="googlemap1" style="height: 370px;"></div>

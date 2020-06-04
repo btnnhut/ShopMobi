@@ -5339,6 +5339,72 @@ form.cart {
       top: 0px;
       right: 10px; }
 
+/**/
+div.cart {
+    float: left;
+    margin-right: 40px;
+}
+
+@media (max-width: 1199px) {
+    div.cart {
+        margin-right: 20px;
+    }
+}
+
+div.cart .quantity {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+    div.cart .quantity .minus-icon {
+        width: 24px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+    }
+
+        div.cart .quantity .minus-icon:after {
+            content: "\f462";
+            font-family: ionicons;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+
+    div.cart .quantity .plus-icon {
+        width: 24px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+    }
+
+        div.cart .quantity .plus-icon:after {
+            content: "\f489";
+            font-family: ionicons;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+
+    div.cart .quantity .btn-number {
+        position: absolute;
+        cursor: pointer;
+        background: transparent;
+    }
+
+    div.cart .quantity .quantity-left-minus {
+        top: 0px;
+        left: 10px;
+    }
+
+    div.cart .quantity .quantity-right-plus {
+        top: 0px;
+        right: 10px;
+    }
+
 #quantity {
   width: 140px;
   height: 50px;
